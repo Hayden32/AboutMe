@@ -42,20 +42,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCq-oW-RDv">
+                                <rect key="frame" x="105.5" y="818" width="203" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Introduce Yourself"/>
+                                <connections>
+                                    <action selector="introduceYourselfButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZh-5A-HwV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BFR-ef-gft" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="4ZU-al-prS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DCq-oW-RDv" secondAttribute="bottom" id="Mxc-NV-f2l"/>
                             <constraint firstItem="DHy-xv-bdQ" firstAttribute="leading" secondItem="WtL-Lx-qkx" secondAttribute="trailing" constant="8" symbolic="YES" id="RFi-VE-oXq"/>
                             <constraint firstItem="WtL-Lx-qkx" firstAttribute="baseline" secondItem="DHy-xv-bdQ" secondAttribute="baseline" id="Rhk-Pt-dKk"/>
                             <constraint firstItem="WtL-Lx-qkx" firstAttribute="top" secondItem="BFR-ef-gft" secondAttribute="bottom" constant="8" symbolic="YES" id="VU8-j5-hhb"/>
                             <constraint firstItem="BFR-ef-gft" firstAttribute="leading" secondItem="WtL-Lx-qkx" secondAttribute="leading" id="YjQ-VV-hxP"/>
                             <constraint firstItem="fdq-Vb-Xnx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="a8Z-yo-AD7"/>
+                            <constraint firstItem="DCq-oW-RDv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bTQ-aq-N0E"/>
                             <constraint firstItem="BFR-ef-gft" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lBV-Xy-pju"/>
                             <constraint firstItem="fdq-Vb-Xnx" firstAttribute="leading" secondItem="BFR-ef-gft" secondAttribute="trailing" constant="8" symbolic="YES" id="zgU-ah-6On"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="DHy-xv-bdQ" id="vid-t2-gHC"/>
+                        <outlet property="nameLabel" destination="fdq-Vb-Xnx" id="i8S-pS-Yge"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
