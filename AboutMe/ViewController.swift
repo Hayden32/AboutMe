@@ -13,8 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        print("My name is Hayden")
+        nameLabel.text = ""
+        hobbiesLabel.text = ""
     }
+    
     @IBAction func introduceYourselfButtonPressed(_ sender: Any) {
         nameLabel.text = "Hayden"
         hobbiesLabel.text = "Football"
